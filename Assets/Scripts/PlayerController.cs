@@ -61,6 +61,7 @@ public class PlayerController : MonoBehaviour
 
         float horizontalScreenSize = gameManager.horizontalScreenSize;
         float verticalScreenSize = gameManager.verticalScreenSize;
+        transform.position = new Vector3(transform.position.x, Mathf.Clamp(transform.position.y, -verticalScreenSize/2f, verticalScreenSize*0), transform.position.z);
 
         if (transform.position.x <= -horizontalScreenSize || transform.position.x > horizontalScreenSize)
         {
