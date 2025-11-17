@@ -151,8 +151,10 @@ MonoBehaviour:
   playerPrefab: {fileID: 6465214131589529892, guid: 2946f3eb6029d8a40b20e03adb96e4fa, type: 3}
   enemyOnePrefab: {fileID: 8729755512266785908, guid: 57d7aa5182902e24cb707961f14f52d5, type: 3}
   enemyTwoPrefab: {fileID: 8729755512266785908, guid: f078c76b4a7332b4397c3466387bd607, type: 3}
+  coinPrefab: {fileID: 997633525154481567, guid: 94072dfa47146c84f9d24cd472d80e42, type: 3}
   cloudPrefab: {fileID: 8901978872678414076, guid: 14dd4fa52784c904e83c0650f3eea560, type: 3}
   livesText: {fileID: 999943548}
+  scoreText: {fileID: 803780030}
   horizontalScreenSize: 0
   verticalScreenSize: 0
   score: 0
