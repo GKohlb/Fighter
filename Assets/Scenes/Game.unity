@@ -153,6 +153,7 @@ MonoBehaviour:
   enemyTwoPrefab: {fileID: 8729755512266785908, guid: f078c76b4a7332b4397c3466387bd607, type: 3}
   coinPrefab: {fileID: 997633525154481567, guid: 94072dfa47146c84f9d24cd472d80e42, type: 3}
   cloudPrefab: {fileID: 8901978872678414076, guid: 14dd4fa52784c904e83c0650f3eea560, type: 3}
+  powerUpPrefab: {fileID: 154928080235027219, guid: 79c3872179945014a9bdc1be37b0e5ca, type: 3}
   livesText: {fileID: 999943548}
   scoreText: {fileID: 803780030}
   horizontalScreenSize: 0

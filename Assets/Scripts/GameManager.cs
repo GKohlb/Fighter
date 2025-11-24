@@ -12,6 +12,7 @@ public class GameManager : MonoBehaviour
     public GameObject enemyTwoPrefab;
     public GameObject coinPrefab;
     public GameObject cloudPrefab;
+    public GameObject powerUpPrefab;
 
     public TextMeshProUGUI livesText;
     public TextMeshProUGUI scoreText;
@@ -32,6 +33,7 @@ public class GameManager : MonoBehaviour
         InvokeRepeating("CreateEnemy", 1, 3);
         InvokeRepeating("CreateEnemyTwo", 2, Random.Range(3,5));
         InvokeRepeating("CreateCoin", 2, Random.Range(3,6));
+        InvokeRepeating("CreatePowerUp", 5, Random.Range(10,15));
         ChangeScoreText(score);
     }
 
@@ -52,6 +54,10 @@ public class GameManager : MonoBehaviour
     void CreateCoin()
     {
         Instantiate(coinPrefab, new Vector3(Random.Range(-horizontalScreenSize, horizontalScreenSize) * 0.9f, verticalScreenSize, 0), Quaternion.Euler(180, 0, 0));
+    }
+    void CreatePowerUp()
+    {
+        Instantiate(powerUpPrefab, new Vector3(Random.Range(-horizontalScreenSize, horizontalScreenSize) * 0.9f, verticalScreenSize, 0), Quaternion.Euler(180, 0, 0));
     }
 
     void CreateSky()
